@@ -57,8 +57,11 @@ Check if there are no issues with Homebrew
 
     $ brew doctor
 
+### Install brew cask
 
-
+    brew update
+    brew tap caskroom/cask
+    brew install brew-cask
 
 ## Git
 
@@ -74,6 +77,44 @@ also test,
 
 the output must be /usr/local/bin/git
 
+
+## Node
+
+Install Node.Js from Homebrew
+
+    $ brew update
+    $ brew install node
+
+## MongoDB
+
+### Install
+
+    $ brew update
+    $ brew install mongo
+
+### Running mongodb as a launch service
+
+    ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+
+### Install management studio for MongoDB
+Install any of the mongodb management studios. I prefer to use Studio3T
+
+
+## React Native 
+
+### Install Java 8
+
+    
+    brew tap caskroom/versions
+
+    brew update
+
+    brew cask install java8
+
+### Install React Native
+
+    https://facebook.github.io/react-native/docs/getting-started.html
 
 ## Python
 
@@ -112,29 +153,6 @@ The advantage is that different projects might require different versions of pac
 To install virtualenv, simply run:
 
     $ pip install virtualenv
-
-## Node
-
-Install Node.Js from Homebrew
-
-    $ brew update
-    $ brew install node
-
-## MongoDB
-
-### Install
-
-    $ brew update
-    $ brew install mongo
-
-### Running mongodb as a launch service
-
-    ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
-
-### Install management studio for MongoDB
-Install any of the mongodb management studios. I prefer to use Studio3T
-
 
 ## Projects Folder
 
